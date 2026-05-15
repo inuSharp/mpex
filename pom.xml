@@ -1,0 +1,36 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.yourname</groupId>
+  <artifactId>mpex</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <repositories>
+    <repository>
+      <id>papermc</id>
+      <url>https://repo.papermc.io/repository/maven-public/</url>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.papermc.paper</groupId>
+      <artifactId>paper-api</artifactId>
+      <version>26.1.2.build.63-stable</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.13.0</version>
+        <configuration>
+          <source>25</source>
+          <target>25</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
